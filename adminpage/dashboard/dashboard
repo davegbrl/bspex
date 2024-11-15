@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+<body>
+    <!-- Add Scout Form -->
+    <form action="add_scout.php" method="POST">
+        <input type="text" name="name" placeholder="Scout Name">
+        <!-- Add other input fields for scout details -->
+        <button type="submit">Add Scout</button>
+    </form>
+
+    <!-- Update Scout Form -->
+    <form action="update_scout.php" method="POST">
+        <input type="hidden" name="id" value="scout_id_to_update">
+        <input type="text" name="name" placeholder="Updated Scout Name">
+        <!-- Add other input fields for updated scout details -->
+        <button type="submit">Update Scout</button>
+    </form>
+
+    <!-- Delete Scout Form -->
+    <form action="delete_scout.php" method="POST">
+        <input type="hidden" name="id" value="scout_id_to_delete">
+        <button type="submit">Delete Scout</button>
+    </form>
+
+    <!-- List of Scouts -->
+    <div class="scout-list">
+        <!-- Display list of scouts with edit and delete options -->
+    </div>
+</body>
+</html>
